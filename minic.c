@@ -1,14 +1,4 @@
-/*
- * minic.c - Analisador sintático-semântico e gerador de IR (MINIC)
- *
- * Port em C de minic.py. Validações semânticas e geração de IR canônica (-O0)
- * e com propagação/dobra de constantes (-O1).
- *
- * Compilar: gcc -std=c11 -O2 -Wall -Wextra -o minic minic.c
- * Uso:      ./minic [-O0 | -O1] arquivo.c
- *
- * Códigos de saída: 0 ok | 2 uso/erro léxico | 3 erro sintático | 4 erro semântico
- */
+
 #include <ctype.h>
 #include <errno.h>
 #include <limits.h>
